@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   AppShell,
   Navbar,
@@ -10,10 +10,10 @@ import {
   Burger,
   useMantineTheme,
   Stepper,
-} from "@mantine/core";
+} from '@mantine/core';
 
-import Flow from "./Flow";
-import Draw from "./Draw";
+import Flow from './Flow';
+import Draw from './Draw';
 
 const MyStep = () => {
   const [active, setActive] = useState(1);

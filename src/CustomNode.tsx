@@ -1,12 +1,12 @@
-import React, { memo } from "react";
-import { Handle, Position } from "reactflow";
+import React, { memo } from 'react';
+import { Handle, Position } from 'reactflow';
 
 function CustomNode(data: any) {
   return (
     <div
       className=" cursor-auto w-[150px] px-4 py-2 shadow-md rounded-md bg-white border-2 border-stone-400"
       onClick={() => {
-        alert("go to whiteboard");
+        alert('go to whiteboard');
       }}
     >
       <div className="flex">
