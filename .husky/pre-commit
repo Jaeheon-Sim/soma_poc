@@ -17,6 +17,7 @@ echo "Prettier 완료"
 output=$(echo "$files_to_lint" | xargs ./node_modules/.bin/eslint --max-warnings 0 2>&1)
 
 if [ $? -eq 0 ]; then
+echo "$output" >&1
   echo "Lint 성공"
 else
   echo "$output" >&2
@@ -24,7 +25,6 @@ else
   exit 1
 fi
 
-echo "Lint 완료"
 
 # 모든 변경 내용을 다시 추가합니다.
 git add $staged_files
