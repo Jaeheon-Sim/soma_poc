@@ -66,8 +66,8 @@ const Flow = () => {
       <ReactFlow
         nodes={nodes}
         edges={edges}
-        // onNodesChange={onNodesChange}
-        // onEdgesChange={onEdgesChange}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         nodeTypes={nodeTypes}
         fitView
